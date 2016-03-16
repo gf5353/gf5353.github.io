@@ -1,22 +1,22 @@
-# Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+﻿# Site settings
+title: 很Low的程序猿
+SEOTitle: DaoStyle | Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: 562401002@qq.com
 description: ""
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: "http://gf5353.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+weibo_username:     刀刀style
+#zhihu_username:     
+github_username:    gf5353
+#twitter_username:  
+#facebook_username:  
 
 
 
@@ -55,13 +55,13 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: http://gf5353.github.io
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-about-description: "多读书，多看报，少吃零食，多改bug"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -76,7 +76,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 friends: [
     {
         title: "Hux Blog",
-        href: "http://huangxuan.me"
+        href: "http://gf5353.github.io"
     },{
         title: "Foo",
         href: "#"
