@@ -1,21 +1,19 @@
-﻿---
+---
 layout:     post
 title:      "深入理解Android Gradle"
-subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
+subtitle:   ""
 date:       2015-12-16
 author:     "Gufei"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/tag-bg.jpg"
 tags:
-    - 前端开发
+
     - Android
-    - 翻译
+
 ---
 
 #深入理解Android Gradle 
 
 
- [原作者真的写的很棒附上链接](http://www.jayfeng.com/2015/11/07/Android%E6%89%93%E5%8C%85%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/#comments "")
----
 
 新的android开发工具引用了Gradle构建工具，方便了开发者进行构建不同的应用版本以完成不同的需求。（从此多版本不再痛苦）
 
