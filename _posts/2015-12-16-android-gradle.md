@@ -17,7 +17,7 @@ tags:
 
 新的android开发工具引用了Gradle构建工具，方便了开发者进行构建不同的应用版本以完成不同的需求。（从此多版本不再痛苦）
 
-1. gradle基本语法
+gradle基本语法
 -------------
 
 
@@ -77,7 +77,7 @@ compile fileTree(dir: 'libs', include: ['*.jar'])
 
 第三种就是引入项目中的modle项目，这个无需多讲，跟eclipse中添加library类似
 
-2. 通过gradle替换AndroidManifest中的占位符
+通过gradle替换AndroidManifest中的占位符
 -------------
 
 ----------
@@ -92,6 +92,7 @@ compile fileTree(dir: 'libs', include: ['*.jar'])
 ```   
 现在我需要在AndroidManifest中添加占位符'APP_NAME',通过gradle编译的过程中，通过bulid.gradle修改它，
 manifestPlaceholders=[占位符：需要修改的值]
+
 ```
 buildTypes {
         release {
@@ -101,7 +102,7 @@ buildTypes {
         }
     }
 ```   
-3. 独立配置签名信息
+独立配置签名信息
 -------------
 
 ----------  
@@ -124,7 +125,7 @@ android {
     }
 }
 ```   
-4. 多版本生产环境
+多版本生产环境
 -------------
 
 ---------- 
@@ -148,6 +149,7 @@ release-正式版
 
 ![这里写图片描述](http://img.blog.csdn.net/20151205015447245)
 在这个目录下会有个BuildConfig，我们可以用配置这里面的值来切换全局log的开关，保证生产环境不会泄漏log日志
+
 ```
     buildTypes {
         debug {
@@ -162,11 +164,12 @@ release-正式版
         }
     }
 ```
-5. build type中的定制参数
+build type中的定制参数
 -------------
 
 ---------- 
 我这里列几个我在工作中用到的：
+
 ```
 android {
         debug {
@@ -197,6 +200,7 @@ android {
 ```
 这些都用的太多了，稍微解释一下：
 
+
     // minifyEnabled 混淆处理
     // shrinkResources 去除无用资源
     // signingConfig 签名
@@ -205,12 +209,13 @@ android {
     // debuggable 是否保留调试信息
     // ... ...
     
-6. 多工程全局配置
+多工程全局配置
 -------------
 
 ---------- 
 随着产品渠道的铺开，往往一套代码需要支持多个产品形态，这就需要抽象出主要代码到一个Library，然后基于Library扩展几个App Module。
 相信每个module的build.gradle都会有这个代码：
+
 ```
 android {
     compileSdkVersion 22
@@ -227,6 +232,7 @@ android {
 当升级sdk、build tool、target sdk等，几个module都要更改，非常的麻烦。最重要的是，很容易忘记，最终导致app module之间的差异不统一，也不可控。
 强大的gradle插件在1.1.0支持全局变量设定，一举解决了这个问题。
 先在project的根目录下的build.gradle定义ext全局变量:
+
 ```
 ext {
     compileSdkVersion = 22
@@ -238,6 +244,7 @@ ext {
 }
 ```
 然后在各module的build.gradle中引用如下：
+
 ```
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -252,14 +259,16 @@ android {
     }
 }
 ```
+
 然后每次修改project级别的build.gradle即可实现全局统一配置。
 
-7. 自定义导出的APK名称
+自定义导出的APK名称
 -------------
 
 ---------- 
 默认android studio生成的apk名称为app-debug.apk或者app-release.apk，当有多个渠道的时候，需要同时编出50个渠道包的时候，就麻烦了，不知道谁是谁了。
 这个时候，就需要自定义导出的APK名称了，不同的渠道编出的APK的文件名应该是不一样的。
+
 ```
 android {
     // rename the apk with the version name
@@ -273,6 +282,7 @@ android {
 }
 ```
 当apk太多时，如果能把apk按debug，release，preview分一下类就更好了（事实上，对于我这样经常发版的人，一编往往就要编四五十个版本的人，debug和release版本全混在一起没法看，必须分类），简单：
+
 ```
 android {
     // rename the apk with the version name
@@ -288,11 +298,12 @@ android {
 ```
 现在生成了类似于ganchai-dev-preview-v2.4.0.0.apk这样格式的包了，preview的包自然就放在preview的文件夹下，清晰明了。
 
-8. 多渠道打包
+多渠道打包
 -------------
 
 ---------- 
 多渠道打包的关键之处在于，定义不同的product flavor, 并把AndroiManifest中的channel渠道编号替换为对应的flavor标识：
+
 ```
 android {
     productFlavors {
@@ -317,6 +328,7 @@ android {
 注意一点，这里的flavor名如果是数字开头，必须用引号引起来。
 构建一下，就能生成一系列的Build Variant了:
 
+
     devDebug
     devRelease
     officialDebug
@@ -330,11 +342,12 @@ android {
 其中debug, release是gradle默认自带的两个build type, 下一节还会继续说明。
 选择一个，就能编译出对应渠道的apk了。    
 
-9. 动态设置一些额外信息
+ 动态设置一些额外信息
 -------------
 
 ----------     
 假如想把当前的编译时间、编译的机器、最新的commit版本添加到apk，而这些信息又不好写在代码里，强大的gradle给了我创造可能的自信：
+
 ```
 android {
     defaultConfig {
@@ -359,5 +372,6 @@ def revision() {
     return code.toString()
 }
 ```
+
 上述代码实现了动态的添加了3个字符串资源: build_time、build_host、build_revision, 然后在其他地方可像如引用字符串一样
 
