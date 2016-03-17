@@ -3,14 +3,14 @@
   <channel>
     <title>很Low的程序猿</title>
     <description></description>
-    <link>http://gf5353.github.io/</link>
-    <atom:link href="http://gf5353.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 16 Mar 2016 23:40:53 +0800</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2016 23:40:53 +0800</lastBuildDate>
+    <link>gufei.me/</link>
+    <atom:link href="gufei.me/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 17 Mar 2016 13:14:54 +0800</pubDate>
+    <lastBuildDate>Thu, 17 Mar 2016 13:14:54 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>hell blog</title>
+        <title>hell kotlin</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -18,11 +18,37 @@
 &lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;Blog 就这么开通了。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Feb 2016 20:00:00 +0800</pubDate>
+        <link>gufei.me/2016/02/29/kotlin/</link>
+        <guid isPermaLink="true">gufei.me/2016/02/29/kotlin/</guid>
+        
+        <category>kotlin</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>初次接触Kotlin</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“用Kotlin开发android更简洁(￣_,￣ )”&lt;/p&gt;
+&lt;/blockquote&gt;
 
+&lt;h2 id=&quot;kotlinhttpskotlinlangorg&quot;&gt;&lt;a href=&quot;https://kotlinlang.org/&quot;&gt;Kotlin介绍&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Kotlin 是在2016年2月16号正式发布了1.0版本，是一个基于 JVM 的新的编程语言， Kotlin是一门与Swift类似的静态类型JVM语言,由JetBrains设计开发并开源。&lt;/p&gt;
+
+&lt;p&gt;与Java相比，Kotlin的语法更简洁、更具表达性，而且提供了更多的特性，比如，高阶函数、操作符重载、字符串模板。它与Java高度可互操作，可以同时用在一个项目中，要比Java更安全，更简洁，能够兼容java，编译速度至少同java一样快。&lt;/p&gt;
+
+&lt;h2 id=&quot;ide&quot;&gt;关于IDE工具&lt;/h2&gt;
+&lt;p&gt;开发工具当然首选studio,具体优势也就不说了。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;环境搭建&lt;/h2&gt;
+&lt;p&gt;android studio 已经有支持java转Kotlin的插件了，
+&lt;img src=&quot;http://img.blog.csdn.net/20151205015447245&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Jan 2016 20:00:00 +0800</pubDate>
-        <link>http://gf5353.github.io/2016/01/29/hello-2016/</link>
-        <guid isPermaLink="true">http://gf5353.github.io/2016/01/29/hello-2016/</guid>
+        <link>gufei.me/2016/01/29/hello-2016/</link>
+        <guid isPermaLink="true">gufei.me/2016/01/29/hello-2016/</guid>
         
         <category>生活</category>
         
@@ -375,8 +401,8 @@ def revision() {
 
 </description>
         <pubDate>Wed, 16 Dec 2015 00:00:00 +0800</pubDate>
-        <link>http://gf5353.github.io/2015/12/16/android-gradle/</link>
-        <guid isPermaLink="true">http://gf5353.github.io/2015/12/16/android-gradle/</guid>
+        <link>gufei.me/2015/12/16/android-gradle/</link>
+        <guid isPermaLink="true">gufei.me/2015/12/16/android-gradle/</guid>
         
         <category>Android</category>
         

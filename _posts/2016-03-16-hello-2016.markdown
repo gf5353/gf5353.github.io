@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "hell blog"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "初次接触Kotlin"
+subtitle:   " "
 date:       2016-01-29 12:00:00
 author:     "Guf"
 header-img: "img/post-bg-2015.jpg"
@@ -9,10 +9,19 @@ tags:
     - 生活
 ---
 
-> “Yeah It's on. ”
+> “用Kotlin开发android更简洁(￣_,￣ )”
 
 
-## 前言
+## [Kotlin介绍](https://kotlinlang.org/)
+Kotlin 是在2016年2月16号正式发布了1.0版本，是一个基于 JVM 的新的编程语言， Kotlin是一门与Swift类似的静态类型JVM语言,由JetBrains设计开发并开源。
 
-Blog 就这么开通了。
+与Java相比，Kotlin的语法更简洁、更具表达性，而且提供了更多的特性，比如，高阶函数、操作符重载、字符串模板。它与Java高度可互操作，可以同时用在一个项目中，要比Java更安全，更简洁，能够兼容java，编译速度至少同java一样快。
 
+
+## 关于IDE工具
+开发工具当然首选studio,具体优势也就不说了。
+
+
+## 环境搭建
+android studio 已经有支持java转Kotlin的插件了，
+![](http://img.blog.csdn.net/20151205015447245)
