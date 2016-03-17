@@ -103,7 +103,7 @@ buildTypes {
     }
 ```   
 独立配置签名信息
--------------
+
 
 ----------  
 对于签名相关的信息,直接写在gradle当然不好,特别是一些开源项目，可以添加到gradle.properties:
@@ -125,21 +125,24 @@ android {
     }
 }
 ```   
+
 多版本生产环境
 -------------
 
 ---------- 
 版本发布的流程分为：
-```flow
+
+```
+flow
 st=>start: 开发
 op=>operation: 回归测试
 cond=>condition: 满足上线条件?
 e=>end: 发布
-
 st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
+
 所以，我们的版本可以分为三种版本
 debug-开发测试版
 preview-测试预览版
@@ -165,7 +168,7 @@ release-正式版
     }
 ```
 build type中的定制参数
--------------
+
 
 ---------- 
 我这里列几个我在工作中用到的：
