@@ -75,6 +75,10 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
+        title: "Android开发套件",
+        href: "http://www.androiddevtools.cn/"
+    },
+    {
         title: "happycodinggirl",
         href: "http://happycodinggirl.github.io/"
     }
