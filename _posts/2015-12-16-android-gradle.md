@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "深入理解Android Gradle"
+title:      "深入理解Gradle"
 subtitle:   ""
 date:       2015-12-16
 author:     "Gufei"
