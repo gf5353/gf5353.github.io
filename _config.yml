@@ -1,6 +1,6 @@
 ﻿# Site settings
-title: 很Low的程序猿
-SEOTitle: 很Low的程序猿
+title: 尘世间的修炼者
+SEOTitle: 最怕一生碌碌无为，还说平凡难能可贵。
 header-img: img/home-bg.jpg
 email: 562401002@qq.com
 description: ""
@@ -61,7 +61,7 @@ ga_domain: http://gf5353.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "多读书，多看报，少吃零食，多改bug"
+sidebar-about-description: "最怕一生碌碌无为，还说平凡难能可贵。"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
